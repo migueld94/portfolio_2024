@@ -1,0 +1,119 @@
+{
+    "avalible": "Disponible",
+
+    "post": "Desarrollador de software | Cuba",
+
+    "help": "Ayudando con:",
+
+    "items_00": "Inicio",
+
+    "items_04": "Resumen",
+
+    "items_05": "Portafolio",
+
+    "items_01": "Experiencia Profesional",
+
+    "items_02": "Educacíon",
+
+    "items_03": "Certificaciones",
+
+    "personal_skill": "Habilidades Personales",
+
+    "software_skill": "Habilidades de Software",
+    "hobbies": "Aficiones",
+
+    "doing": "¿Qué puedo hacer?",
+
+    "design": "Diseñador Web & Movil",
+
+    "location": "Habana, Cuba",
+    "change_language": "Cambiar idioma",
+    "download": "Descargar CV",
+    "change_mode_dark": "Modo oscuro",
+    "change_mode_ligth": "Modo Claro",
+    "month": "mes",
+    "months": "meses",
+    "year": "año",
+    "years": "años",
+    "experiences": "experiencia",
+    "work": "Desarrollador Web & Movil",
+    "day": "día",
+    "days": "días",
+    "service": "Servicios API",
+
+    "section_about_me": "Acerca",
+    "aboutMe_fist": "Hola, soy Miguel Angel López Delgado. Ingeniero de Software con más de 3 años de experiencia profesional en el campo de TI. En los últimos años se ha comprometido con proyectos como el desarrollo de servicio web API para mantener las comunicaciones con las entidades correspondientes, el desarrollo de un sistema de gestión para llevar a cabo el control de algunas funcionalidades de la entidad, el desarrollo de aplicaciones móviles para la gestión de la comunicación comercial. Durante estos proyectos adquirió una gran experiencia en el desarrollo frontend y backend, así como los otros pasos involucrados en la creación de software y el funcionamiento de los procesos en las entidades donde se ha desarrollado.",
+    "aboutMe_second": "Ha desarrollado habilidades en las tecnologías como Python, Django, Django Rest Framework, Angular, JavaScript. Para el manejo de bases de datos, tiene experiencia con PostgreSQL y Oracle. Para el control de versiones, tiene experiencia con Git, GitLab, GitHub.",
+
+    "section_education": "Educación",
+    "university_name": "Universidad de Ciencias Informáticas (UCI)",
+    "university_degree": "Computer Science Engineer",
+
+    "high_school_name": "Instituto Pre-Universitario José Miguel Pérez Pérez",
+    "high_school_degree": "High School",
+
+    "middle_school_name": "Escuela Secundaria Básica José Luis Arruñada",
+    "middle_school_degree": "Middle School",
+
+    "elementary_school_name": "Escuela Primaria Combatientes de Bolivia",
+    "elementary_school_degree": "Elementary School",
+
+    "section_certificates": "Certificaciones",
+    "certificate_commerce": "Comercio Electrónico",
+    "certificate_cloud_computing": "Cloud Computing",
+    "certificate_marketing": "Fundamentos Básicos del Marketing Digital",
+    "certificate_cybersecurity": "Protege tú negocio - Ciberseguridad en el Teletrabajo",
+    "certificate_digital_skills": "Competencias Digitales para Profesionales",
+    "certificate_digital_employment": "Transformación digital para el empleo",
+
+    "section_lenguage": "Idiomas",
+    "spanish_lenguage": "Español (Nativo)",
+    "english_lenguage": "Ingles (Nivel Medio)",
+
+    "section_skills": "Habilidades",
+    "section_skills_api": "Conocimiento de diseño de API",
+    "section_skills_learner": "Aprendiz rápido",
+    "section_skills_proactive": "Proactivo",
+    "section_skills_advanced": "Habilidades avanzadas para resolver problemas",
+
+    "section_work_experience": "Experiencia Laboral",
+
+    "work_ocupation_frontend": "Desarrollador Frontend",
+    "work_ocupation_backend": "Desarrollador Backend",
+    "work_ocupation_mobile": "Desarrollador móvil",
+    "work_ocupation_tax": "Especialista Global Tributario",
+    "work_ocupation_science": "Especialista C en Ciencias Informáticas",
+    
+    "work_ocupation_00": "Desarrollador Frontend & Backend",
+    "work_ocupation_01": "Desarrollador móvil",
+    "work_ocupation_02": "Servicios Web API",
+    
+    "section_work_experience_technologies": "Tecnologías"
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

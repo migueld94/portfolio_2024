@@ -1,0 +1,356 @@
+{
+    "avalible": "Avalible",
+    "@avalible":{
+        "description": "Avalible"
+    },
+
+    "post": "Software developer | Cuba",
+    "@post":{
+        "description": "Cargo"
+    },
+
+    "help": "Helping with:",
+    "@help":{
+        "description": "help"
+    },
+
+    "items_04": "Resume",
+    "@items_04":{
+        "description": "items"
+    },
+
+    "items_05": "Portfolio",
+    "@items_05":{
+        "description": "items"
+    },
+
+
+    "items_00": "Home",
+    "@items_00":{
+        "description": "items"
+    },
+
+    "items_01": "Professional Experience",
+    "@items_01":{
+        "description": "items"
+    },
+
+    "items_02": "Education",
+    "@items_02":{
+        "description": "items"
+    },
+
+    "items_03": "Certificates",
+    "@items_03":{
+        "description": "items"
+    },
+
+    "location": "Havana, Cuba",
+    "@location":{
+        "description": "My location"
+    },
+
+    "day": "day",
+    "@day":{
+        "description": "My location"
+    },
+
+    "days": "days",
+    "@days":{
+        "description": "My location"
+    },
+
+    "service": "API Services",
+    "@service":{
+        "description": "My location"
+    },
+
+    "month": "month",
+    "@month":{
+        "description": "My location"
+    },
+
+    "months": "months",
+    "@months":{
+        "description": "My location"
+    },
+
+    "years": "years",
+    "@years":{
+        "description": "My location"
+    },
+
+    "experiences": "experience",
+    "@experiences":{
+        "description": "My location"
+    },
+
+    "work": "Web & Movil Developer",
+    "@work":{
+        "description": "My location"
+    },
+
+    "design": "Web & Movil Design",
+    "@design":{
+        "description": "My location"
+    },
+
+    "year": "year",
+    "@year":{
+        "description": "My location"
+    },
+
+    "change_language": "Change lenguage",
+    "@change_language":{
+        "description": "My location"
+    },
+
+    "personal_skill": "Personal Skills",
+    "@personal_skill":{
+        "description": "My location"
+    },
+
+    "software_skill": "Software Skills",
+    "@software_skill":{
+        "description": "My location"
+    },
+
+    "hobbies": "Hobbies",
+    "@hobbies":{
+        "description": "My location"
+    },
+
+    "doing": "What can i do?",
+    "@doing":{
+        "description": "My location"
+    },
+
+    "download": "Download CV",
+    "@download":{
+        "description": "My location"
+    },
+
+    "change_mode_dark": "Dark mode",
+    "@change_mode_dark":{
+        "description": "My location"
+    },
+
+    "change_mode_ligth": "Ligth mode",
+    "@change_mode_ligth":{
+        "description": "My location"
+    },
+
+    "section_about_me": "About",
+    "@section_about_me": {
+        "description": "Education"
+    },
+
+    "aboutMe_fist": "Hi, i'm Miguel Angel Lopez Delgado.Software Engineer with more than 3 years of professional experience in the IT field. In recent years, it has been committed to projects such as the development of an API web service to maintain communications with the corresponding entities, the development of a management system to carry out the control of some functionalities of the entity, the development of mobile applications for the management of commercial communication. During these projects he gained extensive experience in frontend and backend development, as well as the other steps involved in creating software and running processes in the entities where it has been developed.",
+    "@aboutMe_fist": {
+        "description": "About me"
+    },
+
+    "aboutMe_second": "He has developed skills in technologies like Python, Django, Django Rest Framework, Angular, JavaScript. For database management, he has experience with PostgreSQL and Oracle. For version control, he has experience with Git, GitLab, GitHub.",
+    "@aboutMe_second": {
+        "description": "About me"
+    },
+
+    "section_education": "Education",
+    "@section_education": {
+        "description": "Education"
+    },
+
+    "university_name": "University of Computer Science (UCI)",
+    "@university_name": {
+        "description": "Education"
+    },
+
+    "university_degree": "Computer Science Engineer",
+    "@university_degree": {
+        "description": "Education"
+    },
+
+    "high_school_name": "José Miguel Pérez Pérez Pre-University Institute",
+    "@high_school_name": {
+        "description": "Education"
+    },
+
+    "high_school_degree": "High School",
+    "@high_school_degree": {
+        "description": "Education"
+    },
+
+    "middle_school_name": "José Luis Arruñada Basic Secondary School",
+    "@middle_school_name": {
+        "description": "Education"
+    },
+
+    "middle_school_degree": "Middle School",
+    "@middle_school_degree": {
+        "description": "Education"
+    },
+
+    "elementary_school_name": "Bolivian Combatants Elementary School",
+    "@elementary_school_name": {
+        "description": "Education"
+    },
+
+    "elementary_school_degree": "Elementary School",
+    "@middle_school_degree": {
+        "description": "Education"
+    },
+
+    "section_certificates": "Certificates",
+    "@section_certificates": {
+        "description": "Certifications"
+    },
+
+    "certificate_commerce": "E - Commerce",
+    "@certificate_commerce": {
+        "description": "Certifications"
+    },
+
+    "certificate_cloud_computing": "Cloud Computing",
+    "@certificate_cloud_computing": {
+        "description": "Certifications"
+    },
+
+    "certificate_marketing": "Basic Fundamentals of Digital Marketing",
+    "@certificate_marketing": {
+        "description": "Certifications"
+    },
+
+    "certificate_cybersecurity": "Protect your business - Cybersecurity in Teleworking",
+    "@certificate_cybersecurity": {
+        "description": "Certifications"
+    },
+
+    "certificate_digital_skills": "Digital Skills for Professionals",
+    "@certificate_digital_skills": {
+        "description": "Certifications"
+    },
+
+   "certificate_digital_employment": "Digital transformation for employment",
+    "@certificate_digital_employment": {
+        "description": "Certifications"
+    },
+
+    "section_lenguage": "Lenguage",
+    "@section_lenguage": {
+        "description": "Lenguage"
+    },
+
+    "spanish_lenguage": "Spanish (Native)",
+    "@spanish_lenguage": {
+        "description": "Lenguage"
+    },
+
+    "english_lenguage": "English (Medium Level)",
+    "@english_lenguage": {
+        "description": "Lenguage"
+    },
+
+    "section_skills": "Skills",
+    "@section_skills": {
+        "description": "Skills"
+    },
+
+    "section_skills_api": "API design knowledge",
+    "@section_skills_api": {
+        "description": "Skills"
+    },
+    "section_skills_learner": "Quick learner",
+    "@section_skills_learner": {
+        "description": "Skills"
+    },
+    "section_skills_proactive": "Proactive",
+    "@section_skills_proactive": {
+        "description": "Skills"
+    },
+    "section_skills_advanced": "Advanced problem-solving skills",
+    "@section_skills_advanced": {
+        "description": "Skills"
+    },
+
+    "section_work_experience": "Work experience",
+    "@section_work_experience": {
+        "description": "Work experience"
+    },
+
+    "work_ocupation_frontend": "Frontend Developer",
+    "@work_ocupation_frontend": {
+        "description": "Work experience"
+    },
+
+    "work_ocupation_backend": "Backend Developer",
+    "@work_ocupation_backend": {
+        "description": "Work experience"
+    },
+
+    "work_ocupation_mobile": "Mobile developer",
+    "@section_work_experience": {
+        "description": "Work experience"
+    },
+
+    "work_ocupation_tax": "Global Tax Specialist",
+    "@work_ocupation_tax": {
+        "description": "Work experience"
+    },
+
+    "work_ocupation_science": "Computer Science Specialist C",
+    "@work_ocupation_science": {
+        "description": "Work experience"
+    },
+
+    "work_ocupation_00": "Frontend & Backend Developer",
+    "@work_ocupation_00": {
+        "description": "Ocupation"
+    },
+
+    "work_ocupation_01": "Mobile Developer",
+    "@work_ocupation_01": {
+        "description": "Ocupation"
+    },
+
+    "work_ocupation_02": "API Web Services",
+    "@work_ocupation_02": {
+        "description": "Ocupation"
+    },
+
+    "section_work_experience_technologies": "Technologies",
+    "@section_work_experience_technologies": {
+        "description": "Technologies"
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
