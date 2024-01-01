@@ -34,7 +34,7 @@ class _MyAppState extends State<MyApp> {
       builder: (context, child) {
         final provider = Provider.of<ThemeProvider>(context);
         return MaterialApp(
-          title: 'Portfolio Wendy',
+          title: 'Portfolio',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             useMaterial3: true,
