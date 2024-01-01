@@ -68072,7 +68072,7 @@ $1(a){return new A.jy($.aS())},
 $S:422}
 A.ady.prototype={
 $2(a,b){var s=A.ans(a,!0,t.eC)
-return new A.mt(B.WY,"Portfolio Wendy",A.aod(null,"Inter",!0),s.b,B.IJ,$.a1P,!1,null)},
+return new A.mt(B.WY,"Portfolio",A.aod(null,"Inter",!0),s.b,B.IJ,$.a1P,!1,null)},
 $S:423}
 A.wx.prototype={
 K(a){var s,r,q=null,p="Nunito",o=t.wr,n=A.H(A.a0(a,B.j,o).gmZ(),A.cm(A.u(a).p3),q)
