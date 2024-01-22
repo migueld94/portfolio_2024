@@ -34,332 +34,329 @@ class SectionResume extends StatelessWidget {
       child: Padding(
         padding: allPadding16,
         child: Row(
-          // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             // Bloque 1
             Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  // mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    // Skills
-                    AutoSizeText(
-                      AppLocalizations.of(context)!.section_skills,
-                      style: context.theme.textTheme.subtitle_01,
-                    ),
-                    verticalMargin8,
-                    AutoSizeText(
-                      'Flutter - Dart',
-                      style: context.theme.textTheme.subtitle_03,
-                    ),
-                    verticalMargin8,
-                    AutoSizeText(
-                      'Python - Django',
-                      style: context.theme.textTheme.subtitle_03,
-                    ),
-                    verticalMargin8,
-                    AutoSizeText(
-                      'Angular',
-                      style: context.theme.textTheme.subtitle_03,
-                    ),
-                    verticalMargin8,
-                    AutoSizeText(
-                      'Java',
-                      style: context.theme.textTheme.subtitle_03,
-                    ),
-                    verticalMargin8,
-                    AutoSizeText(
-                      'HTML - CSS - JavaScript',
-                      style: context.theme.textTheme.subtitle_03,
-                    ),
-                    verticalMargin8,
-                    AutoSizeText(
-                      'Oracle - Postgres',
-                      style: context.theme.textTheme.subtitle_03,
-                    ),
+              flex: 3,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Skills
+                  AutoSizeText(
+                    AppLocalizations.of(context)!.section_skills,
+                    style: context.theme.textTheme.subtitle_01,
+                  ),
+                  verticalMargin8,
+                  AutoSizeText(
+                    'Flutter - Dart',
+                    style: context.theme.textTheme.subtitle_03,
+                  ),
+                  verticalMargin8,
+                  AutoSizeText(
+                    'Python - Django',
+                    style: context.theme.textTheme.subtitle_03,
+                  ),
+                  verticalMargin8,
+                  AutoSizeText(
+                    'Angular',
+                    style: context.theme.textTheme.subtitle_03,
+                  ),
+                  verticalMargin8,
+                  AutoSizeText(
+                    'Java',
+                    style: context.theme.textTheme.subtitle_03,
+                  ),
+                  verticalMargin8,
+                  AutoSizeText(
+                    'HTML - CSS - JavaScript',
+                    style: context.theme.textTheme.subtitle_03,
+                  ),
+                  verticalMargin8,
+                  AutoSizeText(
+                    'Oracle - Postgres',
+                    style: context.theme.textTheme.subtitle_03,
+                  ),
 
-                    verticalMargin16,
-                    AutoSizeText(
-                      AppLocalizations.of(context)!.personal_skill,
-                      style: context.theme.textTheme.subtitle_01,
-                    ),
-                    verticalMargin8,
-                    AutoSizeText(
-                      AppLocalizations.of(context)!.section_skills_api,
-                      style: context.theme.textTheme.subtitle_03,
-                    ),
-                    verticalMargin8,
-                    AutoSizeText(
-                      AppLocalizations.of(context)!.section_skills_learner,
-                      style: context.theme.textTheme.subtitle_03,
-                    ),
-                    verticalMargin8,
-                    AutoSizeText(
-                      AppLocalizations.of(context)!.section_skills_proactive,
-                      style: context.theme.textTheme.subtitle_03,
-                    ),
-                    verticalMargin8,
-                    AutoSizeText(
-                      AppLocalizations.of(context)!.section_skills_advanced,
-                      style: context.theme.textTheme.subtitle_03,
-                    ),
-                    verticalMargin16,
-                    // Languages
-                    AutoSizeText(
-                      AppLocalizations.of(context)!.section_lenguage,
-                      style: context.theme.textTheme.subtitle_01,
-                    ),
-                    verticalMargin8,
-                    Row(
-                      children: [
-                        Icon(
-                          Icons.arrow_right,
-                          color: PortfolioColors.colorWhite,
-                        ),
-                        horizontalMargin8,
-                        AutoSizeText(
-                          AppLocalizations.of(context)!.english_lenguage,
-                          style: context.theme.textTheme.subtitle_03,
-                        ),
-                      ],
-                    ),
-                    verticalMargin8,
-                    Row(
-                      children: [
-                        Icon(
-                          Icons.arrow_right,
-                          color: PortfolioColors.colorWhite,
-                        ),
-                        horizontalMargin8,
-                        AutoSizeText(
-                          AppLocalizations.of(context)!.spanish_lenguage,
-                          style: context.theme.textTheme.subtitle_03,
-                        ),
-                      ],
-                    )
-                  ],
-                ),
+                  verticalMargin30,
+                  AutoSizeText(
+                    AppLocalizations.of(context)!.personal_skill,
+                    style: context.theme.textTheme.subtitle_01,
+                  ),
+                  verticalMargin8,
+                  AutoSizeText(
+                    AppLocalizations.of(context)!.section_skills_api,
+                    style: context.theme.textTheme.subtitle_03,
+                  ),
+                  verticalMargin8,
+                  AutoSizeText(
+                    AppLocalizations.of(context)!.section_skills_learner,
+                    style: context.theme.textTheme.subtitle_03,
+                  ),
+                  verticalMargin8,
+                  AutoSizeText(
+                    AppLocalizations.of(context)!.section_skills_proactive,
+                    style: context.theme.textTheme.subtitle_03,
+                  ),
+                  verticalMargin8,
+                  AutoSizeText(
+                    AppLocalizations.of(context)!.section_skills_advanced,
+                    style: context.theme.textTheme.subtitle_03,
+                  ),
+                  // verticalMargin16,
+                  verticalMargin30,
+
+                  // Languages
+                  AutoSizeText(
+                    AppLocalizations.of(context)!.section_lenguage,
+                    style: context.theme.textTheme.subtitle_01,
+                  ),
+                  verticalMargin8,
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.arrow_right,
+                        color: PortfolioColors.colorWhite,
+                      ),
+                      horizontalMargin8,
+                      AutoSizeText(
+                        AppLocalizations.of(context)!.english_lenguage,
+                        style: context.theme.textTheme.subtitle_03,
+                      ),
+                    ],
+                  ),
+                  verticalMargin8,
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.arrow_right,
+                        color: PortfolioColors.colorWhite,
+                      ),
+                      horizontalMargin8,
+                      AutoSizeText(
+                        AppLocalizations.of(context)!.spanish_lenguage,
+                        style: context.theme.textTheme.subtitle_03,
+                      ),
+                    ],
+                  )
+                ],
               ),
             ),
 
             // Bloque 2
             Expanded(
-              child: Container(
-                // width: 600,
-                child: SingleChildScrollView(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      AutoSizeText(
-                        AppLocalizations.of(context)!.section_work_experience,
-                        style: context.theme.textTheme.subtitle_01,
-                      ),
-                      verticalMargin4,
-                      AutoSizeText(
-                        'EMSER | Cordoba, Argentina',
-                        style: context.theme.textTheme.subtitle_02,
-                      ),
-                      verticalMargin8,
-                      SizedBox(
-                        height: 50,
-                        child: TimelineTile(
-                          isFirst: true,
-                          alignment: TimelineAlign.manual,
-                          lineXY: 0.4,
-                          beforeLineStyle:
-                              LineStyle(color: PortfolioColors.colorWhite),
-                          indicatorStyle: IndicatorStyle(
-                            width: 20,
-                            color: PortfolioColors.colorWhite,
-                            iconStyle: IconStyle(
-                              iconData: Icons.done,
-                              color: PortfolioColors.colorBlack,
-                            ),
-                          ),
-                          startChild: AutoSizeText(
-                            '09/2024 - 09/2024',
-                            style: context.theme.textTheme.subtitle_03,
-                          ),
-                          endChild: Padding(
-                            padding: const EdgeInsets.only(left: 16.0),
-                            child: AutoSizeText(
-                              'Fast2Ship\n${AppLocalizations.of(context)!.work_ocupation_00}',
-                              style: context.theme.textTheme.subtitle_03,
-                            ),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 50,
-                        child: TimelineTile(
-                          // isFirst: true,
-                          alignment: TimelineAlign.manual,
-                          lineXY: 0.4,
-                          beforeLineStyle:
-                              LineStyle(color: PortfolioColors.colorWhite),
-                          indicatorStyle: IndicatorStyle(
-                            width: 20,
-                            color: PortfolioColors.colorWhite,
-                            iconStyle: IconStyle(
-                              iconData: Icons.done,
-                              color: PortfolioColors.colorBlack,
-                            ),
-                          ),
-                          startChild: AutoSizeText(
-                            '09/2024 - 09/2024',
-                            style: context.theme.textTheme.subtitle_03,
-                          ),
-                          endChild: Padding(
-                            padding: const EdgeInsets.only(left: 16.0),
-                            child: AutoSizeText(
-                              'GoTruck\n${AppLocalizations.of(context)!.work_ocupation_01}',
-                              style: context.theme.textTheme.subtitle_03,
-                            ),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 50,
-                        child: TimelineTile(
-                          isLast: true,
-                          alignment: TimelineAlign.manual,
-                          lineXY: 0.4,
-                          beforeLineStyle:
-                              LineStyle(color: PortfolioColors.colorWhite),
-                          indicatorStyle: IndicatorStyle(
-                            width: 20,
-                            color: PortfolioColors.colorWhite,
-                            iconStyle: IconStyle(
-                              iconData: Icons.done,
-                              color: PortfolioColors.colorBlack,
-                            ),
-                          ),
-                          startChild: AutoSizeText(
-                            '09/2024 - 09/2024',
-                            style: context.theme.textTheme.subtitle_03,
-                          ),
-                          endChild: Padding(
-                            padding: const EdgeInsets.only(left: 16.0),
-                            child: AutoSizeText(
-                              'Gev+\n${AppLocalizations.of(context)!.work_ocupation_01}',
-                              style: context.theme.textTheme.subtitle_03,
-                            ),
-                          ),
-                        ),
-                      ),
-                      verticalMargin8,
-                      AutoSizeText(
-                        'ONAT | ${AppLocalizations.of(context)!.location}',
-                        style: context.theme.textTheme.subtitle_02,
-                      ),
-                      verticalMargin8,
-                      SizedBox(
-                        height: 50,
-                        child: TimelineTile(
-                          isFirst: true,
-                          alignment: TimelineAlign.manual,
-                          lineXY: 0.4,
-                          beforeLineStyle:
-                              LineStyle(color: PortfolioColors.colorWhite),
-                          indicatorStyle: IndicatorStyle(
-                            width: 20,
-                            color: PortfolioColors.colorWhite,
-                            iconStyle: IconStyle(
-                              iconData: Icons.done,
-                              color: PortfolioColors.colorBlack,
-                            ),
-                          ),
-                          startChild: AutoSizeText(
-                            '09/2024 - 09/2024',
-                            style: context.theme.textTheme.subtitle_03,
-                          ),
-                          endChild: Padding(
-                            padding: const EdgeInsets.only(left: 16.0),
-                            child: AutoSizeText(
-                              '${AppLocalizations.of(context)!.work_ocupation_02}\n${AppLocalizations.of(context)!.work_ocupation_tax}',
-                              style: context.theme.textTheme.subtitle_03,
-                            ),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 50,
-                        child: TimelineTile(
-                          isLast: true,
-                          alignment: TimelineAlign.manual,
-                          lineXY: 0.4,
-                          beforeLineStyle:
-                              LineStyle(color: PortfolioColors.colorWhite),
-                          indicatorStyle: IndicatorStyle(
-                            width: 20,
-                            color: PortfolioColors.colorWhite,
-                            iconStyle: IconStyle(
-                              iconData: Icons.done,
-                              color: PortfolioColors.colorBlack,
-                            ),
-                          ),
-                          startChild: AutoSizeText(
-                            '09/2024 - 09/2024',
-                            style: context.theme.textTheme.subtitle_03,
-                          ),
-                          endChild: Padding(
-                            padding: const EdgeInsets.only(left: 16.0),
-                            child: AutoSizeText(
-                              '${AppLocalizations.of(context)!.work_ocupation_02}\n${AppLocalizations.of(context)!.work_ocupation_science}',
-                              style: context.theme.textTheme.subtitle_03,
-                            ),
-                          ),
-                        ),
-                      ),
-                      verticalMargin16,
-                      // 'Education',
-                      AutoSizeText(
-                        AppLocalizations.of(context)!.section_education,
-                        style: context.theme.textTheme.subtitle_01,
-                      ),
-                      verticalMargin8,
-                      SizedBox(
-                        height: 80,
-                        child: TimelineTile(
-                          alignment: TimelineAlign.manual,
-                          lineXY: 0.4,
-                          beforeLineStyle:
-                              LineStyle(color: PortfolioColors.colorWhite),
-                          indicatorStyle: IndicatorStyle(
-                            width: 20,
-                            color: PortfolioColors.colorWhite,
-                            iconStyle: IconStyle(
-                              iconData: Icons.done,
-                              color: PortfolioColors.colorBlack,
-                            ),
-                          ),
-                          startChild: AutoSizeText(
-                            '2024 - 2024',
-                            style: context.theme.textTheme.subtitle_03,
-                          ),
-                          endChild: Padding(
-                            padding: const EdgeInsets.only(left: 16.0),
-                            child: AutoSizeText(
-                              '${AppLocalizations.of(context)!.university_name}\n${AppLocalizations.of(context)!.university_degree}',
-                              style: context.theme.textTheme.subtitle_03,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
+              flex: 5,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  AutoSizeText(
+                    AppLocalizations.of(context)!.section_work_experience,
+                    style: context.theme.textTheme.subtitle_01,
                   ),
-                ),
+                  verticalMargin4,
+                  AutoSizeText(
+                    'EMSER | Cordoba, Argentina',
+                    style: context.theme.textTheme.subtitle_02,
+                  ),
+                  verticalMargin8,
+                  SizedBox(
+                    height: 50,
+                    child: TimelineTile(
+                      isFirst: true,
+                      alignment: TimelineAlign.manual,
+                      lineXY: 0.4,
+                      beforeLineStyle:
+                          LineStyle(color: PortfolioColors.colorWhite),
+                      indicatorStyle: IndicatorStyle(
+                        width: 20,
+                        color: PortfolioColors.colorWhite,
+                        iconStyle: IconStyle(
+                          iconData: Icons.done,
+                          color: PortfolioColors.colorBlack,
+                        ),
+                      ),
+                      startChild: AutoSizeText(
+                        '09/2024 - 09/2024',
+                        style: context.theme.textTheme.subtitle_03,
+                      ),
+                      endChild: Padding(
+                        padding: const EdgeInsets.only(left: 16.0),
+                        child: AutoSizeText(
+                          'Fast2Ship\n${AppLocalizations.of(context)!.work_ocupation_00}',
+                          style: context.theme.textTheme.subtitle_03,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 50,
+                    child: TimelineTile(
+                      // isFirst: true,
+                      alignment: TimelineAlign.manual,
+                      lineXY: 0.4,
+                      beforeLineStyle:
+                          LineStyle(color: PortfolioColors.colorWhite),
+                      indicatorStyle: IndicatorStyle(
+                        width: 20,
+                        color: PortfolioColors.colorWhite,
+                        iconStyle: IconStyle(
+                          iconData: Icons.done,
+                          color: PortfolioColors.colorBlack,
+                        ),
+                      ),
+                      startChild: AutoSizeText(
+                        '09/2024 - 09/2024',
+                        style: context.theme.textTheme.subtitle_03,
+                      ),
+                      endChild: Padding(
+                        padding: const EdgeInsets.only(left: 16.0),
+                        child: AutoSizeText(
+                          'GoTruck\n${AppLocalizations.of(context)!.work_ocupation_01}',
+                          style: context.theme.textTheme.subtitle_03,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 50,
+                    child: TimelineTile(
+                      isLast: true,
+                      alignment: TimelineAlign.manual,
+                      lineXY: 0.4,
+                      beforeLineStyle:
+                          LineStyle(color: PortfolioColors.colorWhite),
+                      indicatorStyle: IndicatorStyle(
+                        width: 20,
+                        color: PortfolioColors.colorWhite,
+                        iconStyle: IconStyle(
+                          iconData: Icons.done,
+                          color: PortfolioColors.colorBlack,
+                        ),
+                      ),
+                      startChild: AutoSizeText(
+                        '09/2024 - 09/2024',
+                        style: context.theme.textTheme.subtitle_03,
+                      ),
+                      endChild: Padding(
+                        padding: const EdgeInsets.only(left: 16.0),
+                        child: AutoSizeText(
+                          'Gev+\n${AppLocalizations.of(context)!.work_ocupation_01}',
+                          style: context.theme.textTheme.subtitle_03,
+                        ),
+                      ),
+                    ),
+                  ),
+                  verticalMargin8,
+                  AutoSizeText(
+                    'ONAT | ${AppLocalizations.of(context)!.location}',
+                    style: context.theme.textTheme.subtitle_02,
+                  ),
+                  verticalMargin8,
+                  SizedBox(
+                    height: 50,
+                    child: TimelineTile(
+                      isFirst: true,
+                      alignment: TimelineAlign.manual,
+                      lineXY: 0.4,
+                      beforeLineStyle:
+                          LineStyle(color: PortfolioColors.colorWhite),
+                      indicatorStyle: IndicatorStyle(
+                        width: 20,
+                        color: PortfolioColors.colorWhite,
+                        iconStyle: IconStyle(
+                          iconData: Icons.done,
+                          color: PortfolioColors.colorBlack,
+                        ),
+                      ),
+                      startChild: AutoSizeText(
+                        '09/2024 - 09/2024',
+                        style: context.theme.textTheme.subtitle_03,
+                      ),
+                      endChild: Padding(
+                        padding: const EdgeInsets.only(left: 16.0),
+                        child: AutoSizeText(
+                          '${AppLocalizations.of(context)!.work_ocupation_02}\n${AppLocalizations.of(context)!.work_ocupation_tax}',
+                          style: context.theme.textTheme.subtitle_03,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 50,
+                    child: TimelineTile(
+                      isLast: true,
+                      alignment: TimelineAlign.manual,
+                      lineXY: 0.4,
+                      beforeLineStyle:
+                          LineStyle(color: PortfolioColors.colorWhite),
+                      indicatorStyle: IndicatorStyle(
+                        width: 20,
+                        color: PortfolioColors.colorWhite,
+                        iconStyle: IconStyle(
+                          iconData: Icons.done,
+                          color: PortfolioColors.colorBlack,
+                        ),
+                      ),
+                      startChild: AutoSizeText(
+                        '09/2024 - 09/2024',
+                        style: context.theme.textTheme.subtitle_03,
+                      ),
+                      endChild: Padding(
+                        padding: const EdgeInsets.only(left: 16.0),
+                        child: AutoSizeText(
+                          '${AppLocalizations.of(context)!.work_ocupation_02}\n${AppLocalizations.of(context)!.work_ocupation_science}',
+                          style: context.theme.textTheme.subtitle_03,
+                        ),
+                      ),
+                    ),
+                  ),
+                  verticalMargin16,
+                  // 'Education',
+                  AutoSizeText(
+                    AppLocalizations.of(context)!.section_education,
+                    style: context.theme.textTheme.subtitle_01,
+                  ),
+                  verticalMargin8,
+                  SizedBox(
+                    height: 80,
+                    child: TimelineTile(
+                      alignment: TimelineAlign.manual,
+                      lineXY: 0.4,
+                      beforeLineStyle:
+                          LineStyle(color: PortfolioColors.colorWhite),
+                      indicatorStyle: IndicatorStyle(
+                        width: 20,
+                        color: PortfolioColors.colorWhite,
+                        iconStyle: IconStyle(
+                          iconData: Icons.done,
+                          color: PortfolioColors.colorBlack,
+                        ),
+                      ),
+                      startChild: AutoSizeText(
+                        '2024 - 2024',
+                        style: context.theme.textTheme.subtitle_03,
+                      ),
+                      endChild: Padding(
+                        padding: const EdgeInsets.only(left: 16.0),
+                        child: AutoSizeText(
+                          '${AppLocalizations.of(context)!.university_name}\n${AppLocalizations.of(context)!.university_degree}',
+                          style: context.theme.textTheme.subtitle_03,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
 
             // Bloque 3
             Expanded(
+              flex: 3,
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   AutoSizeText(
                     // 'What can i do?',
@@ -376,7 +373,9 @@ class SectionResume extends StatelessWidget {
                     AppLocalizations.of(context)!.design,
                     style: context.theme.textTheme.subtitle_03,
                   ),
-                  verticalMargin16,
+                  // verticalMargin16,
+                  verticalMargin30,
+
                   AutoSizeText(
                     // 'Software Skills',
                     AppLocalizations.of(context)!.software_skill,
@@ -407,7 +406,9 @@ class SectionResume extends StatelessWidget {
                     'Office - Google Worksheets',
                     style: context.theme.textTheme.subtitle_03,
                   ),
-                  verticalMargin16,
+                  // verticalMargin16,
+                  verticalMargin30,
+
                   AutoSizeText(
                     // 'Hobbies',
                     AppLocalizations.of(context)!.hobbies,
@@ -504,6 +505,8 @@ class SectionResume extends StatelessWidget {
                 ],
               ),
             ),
+
+            //
           ],
         ),
       ),

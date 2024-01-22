@@ -13,6 +13,12 @@ downloadFile(url, flag) {
   anchorElement.click();
 }
 
+Future scrollToItem(GlobalKey item) async {
+  final context = item.currentContext!;
+  await Scrollable.ensureVisible(context,
+      alignment: 0.5, duration: const Duration(seconds: 1));
+}
+
 Future<Object?> showInfo(BuildContext context, String text) {
   return showAnimatedDialog(
     context: context,
