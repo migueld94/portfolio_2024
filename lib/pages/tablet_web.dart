@@ -6,7 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:go_router/go_router.dart';
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:portafolio/assets/utils/methods/utils.dart';
 import 'package:portafolio/assets/utils/widgets/language.dart';
+import 'package:portafolio/assets/utils/widgets/on_hover.dart';
 import 'package:portafolio/assets/utils/widgets/timeline_tile.dart';
 import 'package:portafolio/pages/desktop/sections/section_about.dart';
 import 'package:portafolio/pages/desktop/sections/section_home.dart';
@@ -30,6 +32,10 @@ class TabletWeb extends StatefulWidget {
 }
 
 class _TabletWebState extends State<TabletWeb> {
+  final homeItem = GlobalKey();
+  final aboutUsItem = GlobalKey();
+  final resumeItem = GlobalKey();
+
   @override
   Widget build(BuildContext context) {
     final currentWidth = MediaQuery.of(context).size;
@@ -41,19 +47,53 @@ class _TabletWebState extends State<TabletWeb> {
         backgroundColor: PortfolioColors.colorBlack,
         title: Row(
           children: [
-            AutoSizeText(
-              AppLocalizations.of(context)!.items_00,
-              style: context.theme.textTheme.textNav,
+            GestureDetector(
+              onTap: () => scrollToItem(homeItem),
+              child: OnHoverButton(
+                builder: (isHovered) {
+                  final color = isHovered
+                      ? PortfolioColors.colorOrange
+                      : PortfolioColors.colorWhite;
+                  return AutoSizeText(
+                    AppLocalizations.of(context)!.items_00,
+                    style:
+                        context.theme.textTheme.textNav.copyWith(color: color),
+                  );
+                },
+              ),
             ),
             horizontalMargin40,
-            AutoSizeText(
-              AppLocalizations.of(context)!.section_about_me,
-              style: context.theme.textTheme.textNav,
+            GestureDetector(
+              onTap: () => scrollToItem(aboutUsItem),
+              child: OnHoverButton(
+                builder: (isHovered) {
+                  final color = isHovered
+                      ? PortfolioColors.colorOrange
+                      : PortfolioColors.colorWhite;
+                  return AutoSizeText(
+                    AppLocalizations.of(context)!.section_about_me,
+                    style:
+                        context.theme.textTheme.textNav.copyWith(color: color),
+                  );
+                },
+                // child:
+              ),
             ),
             horizontalMargin40,
-            AutoSizeText(
-              AppLocalizations.of(context)!.items_04,
-              style: context.theme.textTheme.textNav,
+            GestureDetector(
+              onTap: () => scrollToItem(resumeItem),
+              child: OnHoverButton(
+                builder: (isHovered) {
+                  final color = isHovered
+                      ? PortfolioColors.colorOrange
+                      : PortfolioColors.colorWhite;
+                  return AutoSizeText(
+                    AppLocalizations.of(context)!.items_04,
+                    style:
+                        context.theme.textTheme.textNav.copyWith(color: color),
+                  );
+                },
+              ),
             ),
           ],
         ),
@@ -66,13 +106,13 @@ class _TabletWebState extends State<TabletWeb> {
         child: Column(
           children: [
             // Section Home
-            SectionHome(currentWidth: currentWidth),
+            SectionHome(currentWidth: currentWidth, key: homeItem),
 
             // Section About
-            SectionAbout(currentWidth: currentWidth),
+            SectionAbout(currentWidth: currentWidth, key: aboutUsItem),
 
             // Section Resume
-            SectionResume(currentWidth: currentWidth),
+            SectionResume(currentWidth: currentWidth, key: resumeItem),
           ],
         ),
       ),

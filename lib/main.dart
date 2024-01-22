@@ -1,16 +1,18 @@
 // ignore_for_file: depend_on_referenced_packages
 
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
+
 import 'package:provider/provider.dart';
 import 'package:url_strategy/url_strategy.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+
 import 'package:portafolio/assets/l10n/l10n.dart';
-import 'package:portafolio/assets/utils/theme/themes_provider.dart';
-import 'package:portafolio/pages/desktop_web.dart';
 import 'package:portafolio/pages/mobile_web.dart';
 import 'package:portafolio/pages/tablet_web.dart';
-import 'package:portafolio/assets/utils/responsive/responsive_layout.dart';
+import 'package:portafolio/pages/desktop_web.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:portafolio/assets/utils/theme/themes_provider.dart';
+import 'package:portafolio/assets/utils/responsive/responsive_layout.dart';
 
 void main() {
   setPathUrlStrategy();
@@ -48,9 +50,6 @@ class _MyAppState extends State<MyApp> {
             GlobalCupertinoLocalizations.delegate,
             GlobalWidgetsLocalizations.delegate,
           ],
-          // themeMode: provider.themeMode,
-          // theme: MyThemes.lightTheme,
-          // darkTheme: MyThemes.darkTheme,
           home: const ResponsiveLayout(
             desktopScaffold: DesktopWeb(),
             tabletScaffold: TabletWeb(),

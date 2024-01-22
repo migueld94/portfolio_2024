@@ -1,4 +1,4 @@
-// ignore_for_file: non_constant_identifier_names
+// ignore_for_file: non_constant_identifier_names, avoid_web_libraries_in_flutter
 
 import 'dart:html' as html;
 import 'package:auto_size_text/auto_size_text.dart';
