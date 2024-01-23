@@ -10,6 +10,9 @@ import 'package:portafolio/assets/utils/methods/utils.dart';
 import 'package:portafolio/assets/utils/theme/themes_provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:portafolio/assets/utils/widgets/on_hover.dart';
+import 'package:url_launcher/url_launcher.dart' as launcher;
+import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class SectionHome extends StatelessWidget {
   const SectionHome({
@@ -66,20 +69,22 @@ class SectionHome extends StatelessWidget {
             verticalMargin16,
             Row(
               children: [
-                Container(
-                  width: 150,
-                  height: 50,
-                  decoration: BoxDecoration(
-                    borderRadius: borderRadius40,
-                    border: Border.all(
-                      color: PortfolioColors.colorWhite,
-                      width: 2.0,
+                GestureDetector(
+                  child: Container(
+                    width: 150,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      borderRadius: borderRadius40,
+                      border: Border.all(
+                        color: PortfolioColors.colorWhite,
+                        width: 2.0,
+                      ),
                     ),
-                  ),
-                  child: Center(
-                    child: AutoSizeText(
-                      AppLocalizations.of(context)!.items_04,
-                      style: context.theme.textTheme.textButton,
+                    child: Center(
+                      child: AutoSizeText(
+                        AppLocalizations.of(context)!.items_04,
+                        style: context.theme.textTheme.textButton,
+                      ),
                     ),
                   ),
                 ),
@@ -106,16 +111,22 @@ class SectionHome extends StatelessWidget {
             const Spacer(),
             Row(
               children: [
-                Container(
-                  width: 40.0,
-                  height: 40.0,
-                  decoration: BoxDecoration(
-                    borderRadius: borderRadius20,
-                    border: Border.all(color: PortfolioColors.colorWhite),
-                  ),
-                  child: Icon(
-                    Ionicons.mail_open_outline,
-                    color: PortfolioColors.colorWhite,
+                GestureDetector(
+                  onTap: () => launchEmail(
+                      toEmail: 'mballesterlb@gmail.com',
+                      subject: 'prueba',
+                      message: 'hi'),
+                  child: Container(
+                    width: 40.0,
+                    height: 40.0,
+                    decoration: BoxDecoration(
+                      borderRadius: borderRadius20,
+                      border: Border.all(color: PortfolioColors.colorWhite),
+                    ),
+                    child: Icon(
+                      Ionicons.mail_open_outline,
+                      color: PortfolioColors.colorWhite,
+                    ),
                   ),
                 ),
                 horizontalMargin8,
@@ -251,5 +262,17 @@ class SectionHome extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+Future launchEmail({
+  required String toEmail,
+  required String subject,
+  required String message,
+}) async {
+  final url =
+      'mailto:$toEmail?subject=${Uri.encodeFull(subject)}&body=${Uri.encodeFull(message)}';
+  if (await canLaunchUrlString(url)) {
+    await launchUrlString(url);
   }
 }

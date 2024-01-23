@@ -4,6 +4,7 @@ import 'package:ionicons/ionicons.dart';
 import 'package:portafolio/assets/utils/assets.dart';
 import 'package:portafolio/assets/utils/theme/themes_provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SectionHome extends StatelessWidget {
   const SectionHome({
@@ -100,16 +101,38 @@ class SectionHome extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    Container(
-                      width: 40.0,
-                      height: 40.0,
-                      decoration: BoxDecoration(
-                        borderRadius: borderRadius20,
-                        border: Border.all(color: PortfolioColors.colorWhite),
-                      ),
-                      child: Icon(
-                        Ionicons.mail_open_outline,
-                        color: PortfolioColors.colorWhite,
+                    GestureDetector(
+                      onTap: () async {
+                        String recipient = 'mballesterlb@gmail.com';
+                        String subject = 'Prueba';
+                        String body = 'Correo de pruebas';
+
+                        final Uri email = Uri(
+                          scheme: 'mailto',
+                          path: recipient,
+                          query: 'subject=' +
+                              Uri.encodeComponent(subject) +
+                              '&body=' +
+                              Uri.encodeComponent(body),
+                        );
+
+                        if (await canLaunchUrl(email)) {
+                          await launchUrl(email);
+                        } else {
+                          debugPrint('error');
+                        }
+                      },
+                      child: Container(
+                        width: 40.0,
+                        height: 40.0,
+                        decoration: BoxDecoration(
+                          borderRadius: borderRadius20,
+                          border: Border.all(color: PortfolioColors.colorWhite),
+                        ),
+                        child: Icon(
+                          Ionicons.mail_open_outline,
+                          color: PortfolioColors.colorWhite,
+                        ),
                       ),
                     ),
                     verticalMargin8,
