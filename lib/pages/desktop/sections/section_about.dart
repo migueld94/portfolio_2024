@@ -59,6 +59,11 @@ class SectionAbout extends StatelessWidget {
                 textAlign: TextAlign.justify,
               ),
             ),
+            verticalMargin8,
+            AutoSizeText(
+              'Certifications',
+              style: context.theme.textTheme.subtitle_01,
+            ),
           ],
         ),
       ),

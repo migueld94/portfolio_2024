@@ -10,8 +10,6 @@ import 'package:portafolio/assets/utils/methods/utils.dart';
 import 'package:portafolio/assets/utils/theme/themes_provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:portafolio/assets/utils/widgets/on_hover.dart';
-import 'package:url_launcher/url_launcher.dart' as launcher;
-import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class SectionHome extends StatelessWidget {
@@ -67,69 +65,28 @@ class SectionHome extends StatelessWidget {
               style: context.theme.textTheme.h3,
             ),
             verticalMargin16,
-            Row(
-              children: [
-                GestureDetector(
-                  child: Container(
-                    width: 150,
-                    height: 50,
-                    decoration: BoxDecoration(
-                      borderRadius: borderRadius40,
-                      border: Border.all(
-                        color: PortfolioColors.colorWhite,
-                        width: 2.0,
-                      ),
-                    ),
-                    child: Center(
-                      child: AutoSizeText(
-                        AppLocalizations.of(context)!.items_04,
-                        style: context.theme.textTheme.textButton,
-                      ),
-                    ),
-                  ),
-                ),
-                horizontalMargin16,
-                Container(
-                  width: 150,
-                  height: 50,
-                  decoration: BoxDecoration(
-                    borderRadius: borderRadius40,
-                    border: Border.all(
-                      color: PortfolioColors.colorWhite,
-                      width: 2.0,
-                    ),
-                  ),
-                  child: Center(
-                    child: AutoSizeText(
-                      AppLocalizations.of(context)!.items_05,
-                      style: context.theme.textTheme.textButton,
-                    ),
-                  ),
-                ),
-              ],
-            ),
             const Spacer(),
             Row(
               children: [
-                GestureDetector(
-                  onTap: () => launchEmail(
-                      toEmail: 'mballesterlb@gmail.com',
-                      subject: 'prueba',
-                      message: 'hi'),
-                  child: Container(
-                    width: 40.0,
-                    height: 40.0,
-                    decoration: BoxDecoration(
-                      borderRadius: borderRadius20,
-                      border: Border.all(color: PortfolioColors.colorWhite),
-                    ),
-                    child: Icon(
-                      Ionicons.mail_open_outline,
-                      color: PortfolioColors.colorWhite,
-                    ),
-                  ),
-                ),
-                horizontalMargin8,
+                // GestureDetector(
+                //   onTap: () => launchEmail(
+                //       toEmail: 'mdelgado2107@gmail.com',
+                //       subject: 'prueba',
+                //       message: 'hi'),
+                //   child: Container(
+                //     width: 40.0,
+                //     height: 40.0,
+                //     decoration: BoxDecoration(
+                //       borderRadius: borderRadius20,
+                //       border: Border.all(color: PortfolioColors.colorWhite),
+                //     ),
+                //     child: Icon(
+                //       Ionicons.mail_open_outline,
+                //       color: PortfolioColors.colorWhite,
+                //     ),
+                //   ),
+                // ),
+                // horizontalMargin8,
                 GestureDetector(
                   onTap: () {
                     html.window.open(
@@ -247,9 +204,21 @@ class SectionHome extends StatelessWidget {
                   ),
                 ),
                 const Spacer(),
-                AutoSizeText(
-                  '3',
-                  style: context.theme.textTheme.textNumberExperience,
+                RichText(
+                  text: TextSpan(
+                    children: [
+                      // TextSpan(
+                      //   text: '+',
+                      //   style: context.theme.textTheme.subtitle_02
+                      //       .copyWith(color: PortfolioColors.colorWhite),
+                      // ),
+                      TextSpan(
+                        text: '3',
+                        style: context.theme.textTheme.textNumberExperience
+                            .copyWith(color: PortfolioColors.colorWhite),
+                      ),
+                    ],
+                  ),
                 ),
                 horizontalMargin8,
                 AutoSizeText(

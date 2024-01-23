@@ -505,8 +505,6 @@ class SectionResume extends StatelessWidget {
                 ],
               ),
             ),
-
-            //
           ],
         ),
       ),
